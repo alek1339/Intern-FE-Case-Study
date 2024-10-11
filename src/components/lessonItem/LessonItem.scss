@@ -1,0 +1,29 @@
+@import "../../styles/colors";
+
+.lesson-item {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $color-primary-dark;
+      color: $color-text;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__link {
+      padding: 8px 10px;
+      font-size: 0.9rem;
+    }
+  }
+}
