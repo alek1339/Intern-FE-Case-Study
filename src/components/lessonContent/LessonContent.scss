@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+
+.lesson-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+  &__display {
+    background-color: $color-background;
+    padding: 20px;
+    border-radius: 8px;
+
+    p {
+      color: $color-text-dark;
+    }
+
+    video,
+    audio,
+    iframe {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
+    padding: 15px;
+
+    &__display {
+      padding: 15px;
+    }
+  }
+}

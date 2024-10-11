@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+
+.course-details {
+  padding: 20px;
+  background-color: $color-background;
+  border-radius: 8px;
+
+  &__title {
+    font-size: 2rem;
+    color: $color-primary;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: $color-text;
+    margin-bottom: 20px;
+  }
+
+  &__modules-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: $color-primary;
+  }
+
+  &__not-found {
+    font-size: 1rem;
+    color: $error-color;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
+
+    &__modules-title {
+      font-size: 1.2rem;
+    }
+  }
+}
